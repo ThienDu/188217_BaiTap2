@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _188217_BaiTap2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_188217_BaiTap2.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="header-item">
+            <section>
+                <a class="top-header" href="#">
+                    <img class="topbardesk" src="./img/TopBarDesk-1200x44-2.png"/>
+                </a>
+            </section>
+        </div>
+        <div class="header-main">
+            <section class="section-top">
+                <a href="#" class="header-logo">
+                    <span class="icon-logo-newsversion "></span>
+                </a>
+                <form class="header-search">
+                    <input class="search-input" type="text" placeholder="Tìm sản phẩm, nhóm hàng, hãng..."/>
+                    <button class="submit-search">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+                <div class="box-right">
+                    <a href="#" class="box-right-cart">
+                        <span class="icon-cart"></span>
+                        <span class="box-cart-txt">Giỏ hàng</span>
+                    </a>
+                    <a href="#" class="box-right-hotline">
+                        Hotline (7h30 - 22h00)<br/>
+                        <span>1900 866 874</span>
+                    </a>
+                    <span class="box-right-space"></span>
+                    <a href="#" class="box-right-txt">
+
+                        <span>CẨM NANG <br/> MẸ VÀ BÉ</span>
+                    </a>
+                </div>
+            </section>
+            <section class="section-bot">
+                <nav class="header-menu">
+                    <ul class="list-menu">
+                        <li>
+                            <a href="#">
+                                <span>SỮA, THỨC UỐNG</span>
+                            </a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>TÃ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>THỰC PHẨM</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>MĨ PHẨM, CHĂM SÓC MẸ VÀ BÉ</span>
+                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>LÀM ĐẸP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>ĐỒ DÙNG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>THỜI TRANG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>ĐỒ CHƠI, DỤNG CỤ HỌC TẬP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <section>
+            <div class = "footer-box">
+
+                <div class="footer-box-1">
+                    <p class="box--title">TỔNG ĐÀI</p>
+                    <div class="box-1-content">
+                        <p>
+                            <span>Gọi mua:</span>
+                            <a href="tel:1900866874">1900.866.874</a>
+                            (7:30 - 22:00)
+                        </p>
+                        <p>
+                            <span>Khiếu nại:</span>
+                            <a href="tel:1900866894">1900.866.894</a>
+                            (8:00 - 21:30)
+                        </p>
+                    </div>
+                    <p class="box-1-link-title">Kết nối với chúng tôi</p>
+                    <div class="box-1-contact">
+                        <a href="#">
+                            <span class="iconlogo-fb"></span>
+                        </a>
+                        <a href="#">
+                            <span class="iconlogo-ub"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-box-2">
+                    <p class="box--title">HỆ THỐNG CỬA HÀNG</p>
+                    <div class="box--content">
+                        <p>
+                            <a href="#"><span>Hệ thống 30 cửa hàng</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Nội quy cửa hàng</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Chất lượng phục vụ</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Chính sách đổi trả, bảo hành</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-box-3">
+                    <p class="box--title">HỖ TRỢ KHÁCH HÀNG</p>
+                    <div class="box--content">
+                        <p>
+                            <a href="#"><span>Điều kiện giao dịch chung</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Hưỡng dẫn mua hàng online</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Chính sách giao hàng</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Chính sách thanh toán</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-box-4">
+                    <p class="box--title">VỀ AVAKIDS</p>
+                    <div class="box--content">
+                        <p>
+                            <a href="#"><span>Giới thiệu công ty</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Chính sách bảo mật công ty</span></a>
+                        </p>
+                        <p>
+                            <a href="#"><span>Xem bản mobile</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer-mkt">
+                <a href="#">
+                    <i class="iconlogo-bct"></i>
+                </a>
+                <a href="#">
+                    <img class="iconlogo-cert" src="~/img/handle_cert.png"/>
+                </a>
+                <a href="#">
+                    <i class="iconlogo-dmca"></i>
+                </a>
+            </div>
+            <p class="copyright">
+            © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. 
+            <br/> 
+            Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@avakids.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. 
+            </p>
+        </section>
+        <div class="footer-bot">
+            <p class="footer-bot-title">Ghé thăm các website khác cùng tập đoàn MWG</p>
+            <ul class="footer-bot-logo">
+                <li>
+                    <a href="#"> <i class="iconlogo-avasport"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-avafashion"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-avaji"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-avacycle"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-topzone"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-bhx"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-tgdd"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-dmx"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="iconlogo-ntak"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
