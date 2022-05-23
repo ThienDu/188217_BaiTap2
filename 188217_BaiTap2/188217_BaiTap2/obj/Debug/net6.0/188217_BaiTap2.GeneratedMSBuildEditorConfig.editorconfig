@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Fresher\BaiTap\188217_BaiTap2\188217_BaiTap2\188217_BaiTap2
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Fresher/BaiTap/188217_BaiTap2/188217_BaiTap2/188217_BaiTap2/Views/Home/Components/ViewProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXFZpZXdQcm9kdWN0c1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Fresher/BaiTap/188217_BaiTap2/188217_BaiTap2/188217_BaiTap2/Views/Home/Components/ViewProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXFZpZXdQcm9kdWN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Fresher/BaiTap/188217_BaiTap2/188217_BaiTap2/188217_BaiTap2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

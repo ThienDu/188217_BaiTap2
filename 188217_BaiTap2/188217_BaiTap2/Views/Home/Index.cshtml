@@ -1,7 +1,8 @@
-﻿@model _188217_BaiTap2.Controllers.Products;
+﻿@model List<ProductsModel>
+@using _188217_BaiTap2.Views.Home.Components.ViewProducts;
 @{
     ViewData["Title"] = "Home Page";
-    
+    var productDetail = Model[0];
 }
 
 <section>
@@ -24,21 +25,21 @@
                       </div>
                       <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="@ViewBag.products[0].Product_Img2" class="d-block w-100" alt="...">
+                          <img src="@productDetail.Product_Img2" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 1/3</h5>
                             
                           </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                          <img src="@ViewBag.products[0].Product_Img3" class="d-block w-100" alt="...">
+                          <img src="@productDetail.Product_Img3" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 2/3</h5>
                             
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="@ViewBag.products[0].Product_Img5" class="d-block w-100" alt="...">
+                          <img src="@productDetail.Product_Img5" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 3/3</h5>
                             
@@ -65,16 +66,16 @@
                     <h2 class="article-content-title">THÔNG TIN SẢN PHẨM</h2>
                     <h3>Đặc điểm nổi bật</h3>
                     <ul>
-                        <li>• <a href="#">@ViewBag.products[0].Product_Name</a> bao gồm @ViewBag.products[0].Product_Detail chi tiết.</li>
-                        <li>• @ViewBag.products[0].Product_Features</li>
-                        <li>• <a href="#">@ViewBag.products[0].Product_Type1</a> @ViewBag.products[0].Product_Features_Type</li>
-                        <li>• <a href="#">@ViewBag.products[0].Product_Category</a> @ViewBag.products[0].Product_Features_Category</li>
+                        <li>• <a href="#">@productDetail.Product_Name</a> bao gồm @productDetail.Product_Detail chi tiết.</li>
+                        <li>• @productDetail.Product_Features</li>
+                        <li>• <a href="#">@productDetail.Product_Type1</a> @productDetail.Product_Features_Type</li>
+                        <li>• <a href="#">@productDetail.Product_Category</a> @productDetail.Product_Features_Category</li>
                     </ul>
                     <h3>Hưỡng dẫn sử dụng</h3>
                     <ul>
-                        <li>• <a href="#">@ViewBag.products[0].Product_Category </a> @ViewBag.products[0].Product_Manual_Category </li>
-                        <li>• @ViewBag.products[0].Product_Manual1.</li>
-                        <li>• @ViewBag.products[0].Product_Manual2.</li>
+                        <li>• <a href="#">@productDetail.Product_Category </a> @productDetail.Product_Manual_Category </li>
+                        <li>• @productDetail.Product_Manual1.</li>
+                        <li>• @productDetail.Product_Manual2.</li>
                     </ul>
                     
                 </div>
@@ -83,21 +84,21 @@
         <div class="detail-right">
             <div class="box-product-infor">
                 <div class="product-name">
-                    <h3>@ViewBag.products[0].Product_Name (@ViewBag.products[0].Product_Detail chi tiết)</h3>
+                    <h3>@productDetail.Product_Name (@productDetail.Product_Detail chi tiết)</h3>
                 </div>
                 <div class="detail-top">
                     <div class="detail-price">
-                        <span class="price-current"> @ViewBag.products[0].Product_Price đ</span>
-                        <span class="price-old"> @ViewBag.products[0].Product_Price_Old đ</span>
-                        <span class="price-precent"> @ViewBag.products[0].Product_Price_Percent%</span>
+                        <span class="price-current"> @productDetail.Product_Price đ</span>
+                        <span class="price-old"> @productDetail.Product_Price_Old đ</span>
+                        <span class="price-precent"> @productDetail.Product_Price_Percent%</span>
                     </div>
-                    <span class="product-code">#@ViewBag.products[0].ProductId</span>
+                    <span class="product-code">@productDetail.ProductId</span>
                 </div>
                 <div class="box-promo">
-                    <p class="promo-txt">Khuyễn mãi (Đến @ViewBag.products[0].Product_Promotion_Date_End)</p>
+                    <p class="promo-txt">Khuyễn mãi (Đến @productDetail.Product_Promotion_Date_End)</p>
                     <ul class="box-promo-list">
                         <li>
-                            <span>@ViewBag.products[0].Product_Promotion_Content <a> (click xem chi tiết)</a></span>
+                            <span>@productDetail.Product_Promotion_Content <a> (click xem chi tiết)</a></span>
                         </li>
                     </ul>
                 </div>
@@ -143,73 +144,53 @@
                     <ul class="info-article">
                         <li>
                             <p class="txt01">Thương hiệu</p>
-                            <p class="txt02">@ViewBag.products[0].Product_Trademark</p>
+                            <p class="txt02">@productDetail.Product_Trademark</p>
                         </li>
                          <li>
                             <p class="txt01">Loại</p>
                             <ul  class="txt02-type">
-                                <li>• @ViewBag.products[0].Product_Type</li>
-                                <li>• @ViewBag.products[0].Product_Type1</li>
+                                <li>• @productDetail.Product_Type</li>
+                                <li>• @productDetail.Product_Type1</li>
                             </ul>
                         </li>
                          <li>
                             <p class="txt01">Độ tuổi</p>
-                            <p class="txt02">@ViewBag.products[0].Product_Age</p>
+                            <p class="txt02">@productDetail.Product_Age</p>
                         </li>
                          <li>
                             <p class="txt01">Chất liệu</p>
-                            <p class="txt02">@ViewBag.products[0].Product_Substance</p>
+                            <p class="txt02">@productDetail.Product_Substance</p>
                         </li>
                          <li>
                             <p class="txt01">Kích thước hộp</p>
-                            <p class="txt02">@ViewBag.products[0].Product_BoxSize cm</p>
+                            <p class="txt02">@productDetail.Product_BoxSize cm</p>
                         </li>
                          <li>
                             <p class="txt01">Trọng lượng</p>
-                            <p class="txt02">@ViewBag.products[0].Product_Weight g</p>
+                            <p class="txt02">@productDetail.Product_Weight g</p>
                         </li>
                          <li>
                             <p class="txt01">Lưu ý khi sử dụng</p>
-                            <p class="txt02">@ViewBag.products[0].Product_Note</p>
+                            <p class="txt02">@productDetail.Product_Note</p>
                         </li>
                          <li>
                             <p class="txt01">Nơi sản xuất</p>
-                            <p class="txt02">@ViewBag.products[0].Product_MadeIn</p>
+                            <p class="txt02">@productDetail.Product_MadeIn</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-   <div class="other-products">
-        <p class="other-products-title">Đồ chơi khác</p>
-        <div class="box-products">
-            @for(int i = 1;i < 7; i++)
-            {
-                <div class="box-product">
-                    <div class="item-product">
-                        <a class="main-contain">
-                            <img class="item-img" src="@ViewBag.products[i].Product_Img8"/>
-                            <div class="item-wrap">
-                                <h3>@ViewBag.products[i].Product_Name (@ViewBag.products[i].Product_Detail chi tiết)</h3>
-                                <p class="item-price-current">@ViewBag.products[i].Product_Price đ</p>
-                                <div class="box-price">
-                                    <p class="item-price-old">@ViewBag.products[i].Product_Price_Old đ</p>
-                                    <span class="item-price-percent">@ViewBag.products[i].Product_Price_Percent%</span>
-                                </div>
-                            </div>
-                        </a>
-                        <button class="btn-buy">
-                            Chọn mua
-                        </button>
-                    </div>
-                </div>
-            }
+   
+    
+    
+    
+    @await Component.InvokeAsync("ViewProducts")
+          
             
             
-        </div>
-    </div>
-
+       
 
 
     <div class="comment-list">
@@ -242,7 +223,7 @@
                     <div><span>1 Đổi 1 Trong Vòng 1 Tháng</span>
                         <span class="li-content-note">(Tùy sản phẩm)</span>
                         <br/>Tại 29 Cửa Hàng Trên Toàn Quốc</div>
-                        <a class="txt-link">Xem chi tiết</a>
+                        <a href="#" class="txt-link">Xem chi tiết</a>
                 </div>
                 
             </li>
@@ -252,7 +233,7 @@
                 </div>
                 <div class="li-content">
                     <div><span>Miễn phí giao hàng</span><br/>Cho Đơn Từ 500.000đ Trong 10km Đầu Tiên</div>
-                    <a class="txt-link">Xem chi tiết</a>
+                    <a href="#" class="txt-link">Xem chi tiết</a>
                 </div>
                 
             </li>
