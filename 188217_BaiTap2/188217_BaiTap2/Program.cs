@@ -20,6 +20,11 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//app.MapControllerRoute(name: "san-pham",
+//                pattern: "san-pham/id",
+//                defaults: new { controller = "Home", action = "Index" });
+
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

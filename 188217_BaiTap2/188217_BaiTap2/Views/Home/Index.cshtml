@@ -1,8 +1,10 @@
-﻿@model List<ProductsModel>
-@using _188217_BaiTap2.Views.Home.Components.ViewProducts;
+﻿@model ProductsModel
+@using _188217_BaiTap2.Views.Shared.Components.ViewProducts;
 @{
     ViewData["Title"] = "Home Page";
-    var productDetail = Model[0];
+
+  
+    var productDetail = Model;
 }
 
 <section>
@@ -25,21 +27,21 @@
                       </div>
                       <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="@productDetail.Product_Img2" class="d-block w-100" alt="...">
+                          <img src="~/@productDetail.Product_Img8" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 1/3</h5>
                             
                           </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                          <img src="@productDetail.Product_Img3" class="d-block w-100" alt="...">
+                          <img src="~/@productDetail.Product_Img3" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 2/3</h5>
                             
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="@productDetail.Product_Img5" class="d-block w-100" alt="...">
+                          <img src="~/@productDetail.Product_Img5" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Ảnh 3/3</h5>
                             

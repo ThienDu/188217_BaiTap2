@@ -1,7 +1,7 @@
 ﻿using _188217_BaiTap2.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace _188217_BaiTap2.Views.Home.Components.ViewProducts
+namespace _188217_BaiTap2.Views.Shared.Components.ViewProducts
 {
     public class ViewProduct : ViewComponent
     {

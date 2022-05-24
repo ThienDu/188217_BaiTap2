@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\188217_BaiTap2",
+    "\\188217_BaiTap2\\188217_BaiTap2",
+    "\\188217_BaiTap2\\188217_BaiTap2\\Controllers"
   ],
+  "SelectedNode": "\\188217_BaiTap2\\188217_BaiTap2\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

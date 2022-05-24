@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fresher\\BaiTap\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj": {}
+    "D:\\Fresher\\BaiTap\\Test1\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj": {}
   },
   "projects": {
-    "D:\\Fresher\\BaiTap\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj": {
+    "D:\\Fresher\\BaiTap\\Test1\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fresher\\BaiTap\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj",
+        "projectUniqueName": "D:\\Fresher\\BaiTap\\Test1\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj",
         "projectName": "188217_BaiTap2",
-        "projectPath": "D:\\Fresher\\BaiTap\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj",
+        "projectPath": "D:\\Fresher\\BaiTap\\Test1\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2.csproj",
         "packagesPath": "C:\\Users\\hient\\.nuget\\packages\\",
-        "outputPath": "D:\\Fresher\\BaiTap\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\obj\\",
+        "outputPath": "D:\\Fresher\\BaiTap\\Test1\\188217_BaiTap2\\188217_BaiTap2\\188217_BaiTap2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hient\\AppData\\Roaming\\NuGet\\NuGet.Config",
