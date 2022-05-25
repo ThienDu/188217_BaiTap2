@@ -1,0 +1,24 @@
+﻿@model List<ProductsModel>
+@{
+    var result = Model;
+}
+
+
+@foreach (var item in result)
+{
+    <li>
+        <a href="#">
+            <div class="img">
+                <img class="result-img" src="@item.Product_Img8"/>
+            </div>
+            <div>
+                <h3>@item.Product_Name</h3>
+                <div>
+                    <p class="item-price-current">@item.Product_Price đ</p>
+                    <p class="item-price-old">@item.Product_Price_Old đ</p>
+                    <span class="item-price-percent">@item.Product_Price_Percent%</span>
+                </div>
+            </div>
+        </a>
+    </li>
+}

@@ -624,6 +624,41 @@ a {
     /*margin-left: 45px;*/
     position: relative;
     transition: .3s;
+    position: relative;
+    border-radius: 10px;
+}
+
+.header-search ul li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+.header-search ul a {
+    display:flex;
+    text-align: center;
+    color: #222;
+}
+
+
+
+.searchlist-result {
+    width: 100%;
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    border-radius: 8px;
+    display: none;
+}
+
+.searchlist-result ul {
+    padding: 5px 40px 10px 30px;
+}
+
+.searchlist-result span {
+    font-size: 18px;
+     float: left;
+    padding-left: 15px;
 }
 
 .search-input {
@@ -635,6 +670,43 @@ a {
     line-height: 20px;
     padding: 10px 20px;
     width: 100%;
+}
+
+.header-search:focus-within .searchlist-result {
+    display:block !important;
+}
+
+.result-content {
+    padding-left: 20px;
+}
+
+.result-price {
+    font-weight: bold;
+}
+
+.searchlist-result a:hover h5 {
+    color: #ed1164;
+
+}
+
+.result-price-old {
+    color: #555;
+    display: inline-block;
+    text-decoration-line: line-through;
+    font-size: 17px;
+}
+
+.result-price-percent {
+    background-color: #ed1164;
+    border-radius: 17px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 1px 5px 1px 5px;
+    
 }
 
 .submit-search {

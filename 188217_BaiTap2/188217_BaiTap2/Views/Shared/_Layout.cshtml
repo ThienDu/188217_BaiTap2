@@ -1,12 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+    @model ProductsModel
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - _188217_BaiTap2</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/_188217_BaiTap2.styles.css" asp-append-version="true" />
+    
 </head>
 <body>
     <header>
@@ -23,10 +26,14 @@
                     <span class="icon-logo-newsversion "></span>
                 </a>
                 <form class="header-search">
-                    <input class="search-input" type="text" placeholder="Tìm sản phẩm, nhóm hàng, hãng..."/>
-                    <button class="submit-search">
+                    <input class="search-input" type="text" name="search" id="search" placeholder="Tìm sản phẩm, nhóm hàng, hãng..."/>
+                    <button class="submit-search" >
                         <span class="icon-search"></span>
                     </button>
+                    <div  class="searchlist-result">
+                        <ul id="result">
+                        </ul>
+                    </div>
                 </form>
                 <div class="box-right">
                     <a href="#" class="box-right-cart">
@@ -229,6 +236,41 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+     <script>
+
+        
+
+            $(document).ready(function () {
+               $('#search').on('keyup', function () {
+                    var SearchValue = $('#search').val();
+                   
+                    $.ajax({
+                        type: "post",
+                        url: "/home/GetSearchingData?SearchValue=" + SearchValue,
+                        success: function (result) {
+                            $('#result').html("");
+
+                            if (result.length == 0) {
+                                 $('#result').append("<tr><h3>Không có sản phẩm nào phù hợp</h3></tr>");
+                            }       
+                            else {
+                                $.each(result, function (index, value) {
+                                    var data =  "<li> <a href='#'> <img src='../"+value.product_Img8+"' width='70px' height= '70px'/><div class='result-content'><h5>"+value.product_Name+"</h5><div><span class='result-price'>"+value.product_Price+"đ</span><span class='result-price-old'>"+value.product_Price_Old+"đ</span><span class='result-price-percent'>"+value.product_Price_Percent+"%</span></div></div></a></li>";
+                                    $('#result').append(data);
+                                       
+
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+       
+
+        </script>
+
 </body>
 </html>
