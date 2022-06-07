@@ -1,0 +1,24 @@
+﻿ @model ProductsModel
+@{
+    var productDetail = Model;
+}
+
+<div class="article">
+                <div class="article-content">
+                    <h2 class="article-content-title">THÔNG TIN SẢN PHẨM</h2>
+                    <h3>Đặc điểm nổi bật</h3>
+                    <ul>
+                        <li>• <a href="#">@productDetail.Product_Name</a> bao gồm @productDetail.Product_Detail chi tiết.</li>
+                        <li>• @productDetail.Product_Features</li>
+                        <li>• <a href="#">@productDetail.Product_Type1</a> @productDetail.Product_Features_Type</li>
+                        <li>• <a href="#">@productDetail.Product_Category</a> @productDetail.Product_Features_Category</li>
+                    </ul>
+                    <h3>Hưỡng dẫn sử dụng</h3>
+                    <ul>
+                        <li>• <a href="#">@productDetail.Product_Category </a> @productDetail.Product_Manual_Category </li>
+                        <li>• @productDetail.Product_Manual1.</li>
+                        <li>• @productDetail.Product_Manual2.</li>
+                    </ul>
+                    
+                </div>
+            </div>

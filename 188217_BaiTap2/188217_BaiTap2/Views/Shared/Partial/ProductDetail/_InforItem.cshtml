@@ -1,0 +1,46 @@
+﻿ @model ProductsModel
+@{
+    var productDetail = Model;
+}
+<div class="infor--item">
+                <p class="infor-title">THÔNG TIN CHI TIẾT</p>
+                <div class="info-content">
+                    <ul class="info-article">
+                        <li>
+                            <p class="txt01">Thương hiệu</p>
+                            <p class="txt02">@productDetail.Product_Trademark</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Loại</p>
+                            <ul  class="txt02-type">
+                                <li>• @productDetail.Product_Type</li>
+                                <li>• @productDetail.Product_Type1</li>
+                            </ul>
+                        </li>
+                         <li>
+                            <p class="txt01">Độ tuổi</p>
+                            <p class="txt02">@productDetail.Product_Age</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Chất liệu</p>
+                            <p class="txt02">@productDetail.Product_Substance</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Kích thước hộp</p>
+                            <p class="txt02">@productDetail.Product_BoxSize cm</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Trọng lượng</p>
+                            <p class="txt02">@productDetail.Product_Weight g</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Lưu ý khi sử dụng</p>
+                            <p class="txt02">@productDetail.Product_Note</p>
+                        </li>
+                         <li>
+                            <p class="txt01">Nơi sản xuất</p>
+                            <p class="txt02">@productDetail.Product_MadeIn</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>

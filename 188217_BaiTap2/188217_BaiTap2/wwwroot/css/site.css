@@ -43,6 +43,7 @@ a {
 .breadcrumb li {
     font-size: 19px;
     line-height:20px;
+    padding-top: 20px;
 }
 
 .breadcrumb a {

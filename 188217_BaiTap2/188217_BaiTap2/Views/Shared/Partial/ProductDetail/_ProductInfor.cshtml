@@ -1,0 +1,35 @@
+﻿ @model ProductsModel
+@{
+    var productDetail = Model;
+}
+
+<div class="box-product-infor">
+                <div class="product-name">
+                    <h3>@productDetail.Product_Name (@productDetail.Product_Detail chi tiết)</h3>
+                </div>
+                <div class="detail-top">
+                    <div class="detail-price">
+                        <span class="price-current"> @productDetail.Product_Price đ</span>
+                        <span class="price-old"> @productDetail.Product_Price_Old đ</span>
+                        <span class="price-precent"> @productDetail.Product_Price_Percent%</span>
+                    </div>
+                    <span class="product-code">@productDetail.ProductId</span>
+                </div>
+                <div class="box-promo">
+                    <p class="promo-txt">Khuyễn mãi (Đến @productDetail.Product_Promotion_Date_End)</p>
+                    <ul class="box-promo-list">
+                        <li>
+                            <span>@productDetail.Product_Promotion_Content <a> (click xem chi tiết)</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-buy ">
+                    <a class="btn-addcart btn">
+                        <p class="btn-txt">
+                            THÊM VÀO GIỎ
+                        </p>
+                    </a>
+                    <span class="btn-spmarket btn">XEM CỬA HÀNG CÒN HÀNG</span>
+                </div>
+                
+            </div>
